@@ -1,5 +1,5 @@
 // ejecutamos la función d erepetir al cargar la página
-addEventListener('load', repetir(6), false);
+addEventListener('load', repetir(8), false);
 
 // función que genera las busquedas el número de veces pasado por parámetro
 function repetir(veces) {
