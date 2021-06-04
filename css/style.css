@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+h1 {
+    font-family: 'Creepster', cursive;
+    color: rgb(21, 46, 56);
+    text-shadow: 1px 2px rgb(110, 201, 24);
+    background-color: #e4e5e7;
+}
+
+body {
+    background-color: #24282f;
+}
+.card {
+    background-color: #555b69;
+    color: aliceblue;
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 5%;
+    padding: 0.5%;
+    transition: transform .2s linear;
+}
+/* Redondeo de los bordes de la imagen (dentro de la card) */
+.card-img-top{
+    border-radius: 5%;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-text{
+    font-weight: 300;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+a{
+text-decoration: none;
+color: rgb(223, 180, 88);
+
+}
