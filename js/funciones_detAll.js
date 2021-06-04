@@ -5,7 +5,7 @@ addEventListener('load', repetir(6), false);
 function repetir(veces) {
 
     // variables para indicar la posición de la busqueda en la api y la posición del div donde lo enviamos
-    let busqueda = 25;
+    let busqueda = 616;
     let posicion = 1;
 
     // lanzamos la busqueda e incrementamos los valores
@@ -29,11 +29,10 @@ function getAll(busqueda, posicion) {
         // enviamos cada respuesta seleccionada de la busqeda a un elemnto por id
         success: function(data) {
             $('#nombre' + posicion).html(data.name);
-            $('#especie' + posicion).html(data.species);
-            $('#sexo' + posicion).html(data.gender);
-            $('#origen' + posicion).html(data.origin.name);
-            $('#imagen' + posicion).html(data.image);
-
+            $('#especie' + posicion).html('Specie: ' + data.species);
+            $('#sexo' + posicion).html('Gender: ' + data.gender);
+            $('#origen' + posicion).html('Origin: ' + data.origin.name);
+            $('#imagen' + posicion).attr('src', data.image);
         },
 
         // en caso de no encontrar la busqueda, nos envía un error por consola
